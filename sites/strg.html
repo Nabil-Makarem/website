@@ -1,0 +1,115 @@
+<!-- Automation Web Programming -->
+
+<!-- AWP_In_Variable Name='"Web2PLC".Start' -->
+<!-- AWP_In_Variable Name='"Web2PLC".Reset' -->
+<!-- AWP_In_Variable Name='"Web2PLC".Schlüssel' -->
+<!-- AWP_In_Variable Name='"Web2PLC".Creator' -->
+<!-- AWP_In_Variable Name='"Web2PLC".Grün' -->
+<!-- AWP_In_Variable Name='"Web2PLC".Gelb' -->
+<!-- AWP_In_Variable Name='"Web2PLC".Rot' -->
+
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../style/style.css">
+	<title>Steuerung</title>
+</head>
+<body>
+	<header>
+		<div id="box_header">
+			<h1>Zuführung von Werkstücken</h1>
+		</div>
+	</header>
+	
+	<nav>
+		<div id="box_nav">
+			<h2> Navigation</h2>
+			<ul class="vertikalnavigation">
+				<li><a href="../index.html">Prozessbeschreibung</a></li>
+				<li><a href="../sites/strg.html">Prozesssteuerung</a></li>
+				<li><a href="../sites/visu.html">Prozessvisualisierung</a></li>
+				<li><a href="../sites/daten.html">Prozessdaten</a></li>
+				<li><a href="../sites/hilfe.html">Hilfe</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<main>
+		<div id="box_main">
+			<h1>Prozesssteuerung</h1>
+			   
+				<table align= "center" width="250px" height="50px" border="3">
+					<tr>
+						<td align="center">
+							<form method="post" action="">
+								<input type="submit" value="Start" style="height: 35px; width: 100px">
+								<input type="hidden" name='"Web2PLC".Start' value="1"> 
+								<input type="hidden" name='"Web2PLC".Start' value="0">   
+							</form>
+						</td>
+						
+						<td align="center">
+							<form method="post" action="">
+								<input type="submit" value="Reset" style="height: 35px; width: 100px">
+								<input type="hidden" name='"Web2PLC".Reset' value="1"> 
+								<input type="hidden" name='"Web2PLC".Reset' value="0">
+							</form>
+						</td>
+
+						<td align="center">
+							<form method="post" action="">
+								<input type="submit" value="Schlüssel" style="height: 35px; width: 100px">
+								<input type="hidden" name='"Web2PLC".Schlüssel' value="1"> 
+								<input type="hidden" name='"Web2PLC".Schlüssel' value="0">
+							</form>
+						</td>
+
+						<!--<td align="center">
+							<form method="post" action="">
+								<input type="submit" value="Creator" style="height: 35px; width: 100px">
+								<input type="hidden" name='"Web2PLC".Creator' value="1"> 
+								<input type="hidden" name='"Web2PLC".Creator' value="0">
+							</form>
+						</td>-->
+						
+
+						<td width="100%" align="center" height="10%">
+							<img style="bottom; margin: 0px; height: 35px; width: 35px; " src='..\images\Bild0:="Web2Plc".Grün:.png'/>
+						</td>
+
+						<td width="100%" align="center" height="10%">
+							<img style="bottom; margin: 0px; height: 35px; width: 35px; " src='..\images\Bild1:="Web2Plc".Gelb:.png'/>
+						</td>
+
+						<td width="100%" align="center" height="10%">
+							<img style="bottom; margin: 0px; height: 35px; width: 35px; " src='..\images\Bild2:="Web2Plc".Rot:.png'/>
+						</td>
+						
+					</tr>
+				</table>
+				<table align= "center" width="550px" height ="50" border="3">
+					<tr>
+						<td>
+							<p>Hier kann man die Station steuern.<br></p>
+							<p>Grün: Das heißt dass die Station bereit steht.<br></p>
+							<p>Gelb: Zeigt dass die Station in Betrieb ist.<br></p>
+							<p>Rot: Ein Fehler ist aufgetreten. Bitte wenden Sie sich an den Leiter.</p>
+						</td>
+					</tr>
+				</table>
+	
+		</div>
+	</main>
+	
+	<footer>
+		<div id="box_footer">
+			<br>
+			<p_footer>Störungsdienst: 03375/ 12345678 oder 0152/ 87654321</p_footer>
+		</div>
+	
+	</footer>
+	
+</body>
+</html>
